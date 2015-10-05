@@ -13,7 +13,7 @@ public class Game {
 	 * @return boolean
 	 */
 	public boolean setName(String name) {
-		name = this.name;
+		this.name = name;
 		return true;
 	}
 	
@@ -30,8 +30,8 @@ public class Game {
 	 * @param release_date The release date of the game
 	 * @return boolean
 	 */
-	public boolean setReleaseDate(Date release_date) {
-		release_date = this.releaseDate;
+	public boolean setReleaseDate(Date releaseDate) {
+		this.releaseDate = releaseDate;
 		return true;
 	}
 	
