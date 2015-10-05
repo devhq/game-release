@@ -4,8 +4,8 @@ import java.util.Date;
 
 public class Game {
 	
-	public String name;
-	public Date releaseDate;
+	private String name;
+	private Date releaseDate;
 	
 	/**
 	 * Sets the game's name
