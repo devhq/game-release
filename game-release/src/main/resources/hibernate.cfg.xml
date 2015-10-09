@@ -11,8 +11,7 @@
         <property name="connection.driver_class">org.postgresql.Driver</property>
         <property name="connection.url">jdbc:postgresql://localhost:5432/hibernatedb</property>
 
-        <!-- <property name="connection.driver_class">com.mysql.jdbcDriver</property>
-        <property name="connection.url">jdbc:hsqldb:mysql://localhost/cmevents?autoReconnect=true</property> -->
+		<!-- Database authentication settings -->
         <property name="connection.username">postgres</property>
         <property name="connection.password">password</property>
 
