@@ -42,7 +42,7 @@ public class Game {
 	 * Returns a String that contains the name of the game
 	 * @return Name of the game
 	 */
-	public String getName() {
+	public String getTitle() {
 		return title;
 	}
 	
@@ -50,7 +50,7 @@ public class Game {
 	 * Sets the game's name
 	 * @param name The name of the game
 	 */
-	public void setName(String name) {
+	public void setTitle(String name) {
 		this.title = name;
 	}
 	
