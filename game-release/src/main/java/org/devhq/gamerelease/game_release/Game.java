@@ -2,15 +2,24 @@ package org.devhq.gamerelease.game_release;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
-@Entity (name="GAMES")
+@Entity
+@Table (name="GAMES")
 public class Game {
 	
 	@Id
+	@Column (name="GAME_ID")
 	private int gameId;
+	@Column (name="TITLE")
 	private String title = null;
+	@Column (name="RELEASE_DATE")
+	@Temporal (TemporalType.DATE)
 	private Date releaseDate = null;
 	
 	/**
