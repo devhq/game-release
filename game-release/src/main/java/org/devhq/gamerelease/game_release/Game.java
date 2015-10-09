@@ -4,17 +4,24 @@ import java.util.Date;
 
 public class Game {
 	
+	private int gameId;
 	private String name = null;
 	private Date releaseDate = null;
 	
 	/**
-	 * Sets the game's name
-	 * @param name The name of the game
-	 * @return boolean
+	 * Returns an int that is the Game ID
+	 * @return Game ID
 	 */
-	public boolean setName(String name) {
-		this.name = name;
-		return true;
+	public int getGameId() {
+		return gameId;
+	}
+
+	/**
+	 * Sets the game's ID number
+	 * @param gameId ID of the game
+	 */
+	public void setGameId(int gameId) {
+		this.gameId = gameId;
 	}
 	
 	/**
@@ -26,6 +33,24 @@ public class Game {
 	}
 	
 	/**
+	 * Sets the game's name
+	 * @param name The name of the game
+	 * @return boolean
+	 */
+	public boolean setName(String name) {
+		this.name = name;
+		return true;
+	}
+	
+	/**boolean
+	 * Returns a Date object that contains the game's release date
+	 * @return Release date of the game
+	 */
+	public Date getReleaseDate() {
+		return releaseDate;
+	}
+	
+	/**
 	 * Sets the game's release date
 	 * @param release_date The release date of the game
 	 * @return boolean
@@ -33,14 +58,6 @@ public class Game {
 	public boolean setReleaseDate(Date releaseDate) {
 		this.releaseDate = releaseDate;
 		return true;
-	}
-	
-	/**
-	 * Returns a Date object that contains the game's release date
-	 * @return Release date of the game
-	 */
-	public Date getReleaseDate() {
-		return releaseDate;
 	}
 
 }
