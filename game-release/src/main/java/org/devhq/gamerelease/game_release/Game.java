@@ -5,12 +5,12 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity
+@Entity (name="GAMES")
 public class Game {
 	
 	@Id
 	private int gameId;
-	private String name = null;
+	private String title = null;
 	private Date releaseDate = null;
 	
 	/**
@@ -34,7 +34,7 @@ public class Game {
 	 * @return Name of the game
 	 */
 	public String getName() {
-		return name;
+		return title;
 	}
 	
 	/**
@@ -42,7 +42,7 @@ public class Game {
 	 * @param name The name of the game
 	 */
 	public void setName(String name) {
-		this.name = name;
+		this.title = name;
 	}
 	
 	/**boolean
