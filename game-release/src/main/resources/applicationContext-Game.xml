@@ -9,7 +9,7 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
   </bean>
 
   <bean id="testGame" class="org.devhq.gamerelease.game_release.Game">
-	<property name="name" value="test" />
+	<property name="title" value="test" />
 	<property name="releaseDate">
 	  <bean factory-bean="dateFormat" factory-method="parse">
 	    <constructor-arg value="2015-10-9" />
