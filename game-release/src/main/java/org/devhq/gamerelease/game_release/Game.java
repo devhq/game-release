@@ -35,11 +35,9 @@ public class Game {
 	/**
 	 * Sets the game's name
 	 * @param name The name of the game
-	 * @return boolean
 	 */
-	public boolean setName(String name) {
+	public void setName(String name) {
 		this.name = name;
-		return true;
 	}
 	
 	/**boolean
@@ -53,11 +51,9 @@ public class Game {
 	/**
 	 * Sets the game's release date
 	 * @param release_date The release date of the game
-	 * @return boolean
 	 */
-	public boolean setReleaseDate(Date releaseDate) {
+	public void setReleaseDate(Date releaseDate) {
 		this.releaseDate = releaseDate;
-		return true;
 	}
 
 }
