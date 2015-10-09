@@ -2,8 +2,13 @@ package org.devhq.gamerelease.game_release;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Game {
 	
+	@Id
 	private int gameId;
 	private String name = null;
 	private Date releaseDate = null;
